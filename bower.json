@@ -1,0 +1,19 @@
+{
+  "name": "Adam Recvlohe Portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Adam Recvlohe <adam.recvlohe@gmail.com>"
+  ],
+  "description": "What I have done so far",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Flowtype.js": "~1.1.0"
+  }
+}

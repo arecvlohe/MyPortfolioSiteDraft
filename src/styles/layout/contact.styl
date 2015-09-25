@@ -1,0 +1,60 @@
+#contact
+  padding 2em 0 0 0
+
+  h3
+    text-align center
+
+  form
+    max-width 600px
+    margin 0 auto
+    padding 1em 0 .25em 0
+
+    .input-group
+      margin 1em
+
+      label
+        display block
+        font-size .75em
+
+      textarea
+        border 2px solid black
+        color black
+        box-sizing border-box
+        display block
+        width 100%
+        height 100px
+        margin .5em 0
+        padding .5em .1em
+
+      input
+        background none
+        color lighten(black, 13%)
+        border solid 2px black
+        padding .5em 0
+        box-sizing border-box
+        display block
+        width 100%
+
+        &:focus, &:active
+          outline none
+
+        &[type='text'], &[type='email']
+          border none
+          border-bottom solid 2px black
+
+        &[type='submit']
+          transition all .5s ease-in-out 0s
+
+          &:active, &:hover
+            color white
+            background black
+
+  a
+    color lighten(black, 13%)
+    margin 0 0 0 48%
+
+    i
+      transition .5s ease-in-out 0s
+
+      &:hover
+        color grey

@@ -1,0 +1,19 @@
+mixin project(title, link, location, tools)
+  a(href=link target='_blank').project 
+    .title= title
+    .overlay
+      strong= location
+      i.fa.fa-2x&attributes(attributes)
+      small= tools
+
+#work  
+  h3 What I've done...so far
+  
+  .projects-container
+    +project('Pinterest App','http://aer-pinteresting.herokuapp.com/', 'Heroku', 'HTML5, Sass, Bootstrap, Rails')(class='fa-code')
+    +project("Random Quote App",'http://codepen.io/arecvlohe/full/yNqEaq', 'CodePen','Jade, Sass, JavaScript, jQuery')(class='fa-codepen')
+    +project('Podcast App','http://aer-smokesignals.herokuapp.com/', 'Heroku','HTML5, Sass, Rails')(class='fa-code')
+    +project("Twitch.TV App",'http://codepen.io/arecvlohe/full/bdyGJp/', 'CodePen','Jade, Stylus, CoffeeScript, Semantic-UI, jQUery')(class='fa-codepen')
+    +project('Local Weather App','http://codepen.io/arecvlohe/full/BNPvXQ', 'CodePen','Jade, Sass, JavaScript, jQuery')(class='fa-codepen')
+    +project('News App','https://github.com/arecvlohe/SmokeSignalsNewsMockUp', 'Github', 'Jade, Sass, Semantic-UI')(class='fa-github')
+    

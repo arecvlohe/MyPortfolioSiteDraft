@@ -1,0 +1,63 @@
+#work
+  padding 2em 0 7em 0
+
+  h3
+    text-align center
+    margin-bottom 1em
+
+  .projects-container
+    clearfix();
+
+    a
+      text-decoration none
+
+    .project
+      display block
+      width 33.333%
+      height 100px
+      float left
+      position relative
+      padding-top 10%
+      overflow hidden
+
+      /*projects-images = {
+        '1' :'/images/pinterest-bw.jpg',
+        '2' :'/images/quote-bw.jpg',
+        '3' :'/images/ssn-bw.jpg',
+        '4' :'/images/fcc-bw.jpg',
+        '5' :'/images/weather-bw.jpg',
+        '6' :'/images/smoke-signals-news.jpg'
+      }
+      for project, image in projects-images
+        &:nth-of-type({project})
+          background url(image) center/cover */
+      .title
+        text-align center
+        text-transform uppercase
+        color lighten(black, 13%)
+        font 500 1em normal
+
+      .overlay
+        absolute top 150% bottom left right
+        background transparentify(black, .9)
+        transition .5s ease-in-out 0s
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+
+        strong
+          color white
+          text-transform uppercase
+          font 300 1em normal
+        i
+          color white
+
+        small
+          font 300 .75em normal
+          color white
+          text-align center
+          width 125px
+
+      &:hover .overlay
+        absolute top bottom left right

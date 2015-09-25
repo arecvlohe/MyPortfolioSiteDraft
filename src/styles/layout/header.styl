@@ -1,0 +1,36 @@
+header
+  height 100vh
+  display flex
+  flex-direction column
+  text-align center
+  justify-content center
+  align-items center
+
+  h1
+    font-family 'Open Sans Condensed'
+    font-weight 300
+    line-height 1
+  p
+    font-family 'Open Sans'
+    font-weight 700
+    font-size .5em
+    text-transform uppercase
+    letter-spacing .5em
+    color lighten(black, 13%)
+
+  .icons-container
+    width 300px
+    text-align center
+    padding .75em
+
+    i
+      color lighten(black, 13%)
+      min-width 25%
+      transition .5s ease-in-out 0s
+      &:hover
+        cursor pointer
+        color grey
+
+  a#arrow-down
+    absolute bottom
+    color lighten(black, 13%)
